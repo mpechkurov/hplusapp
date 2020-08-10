@@ -13,7 +13,7 @@ public class User {
     @Id
     private int id;
     @Size(min = 6,
-          message = "Username can't less than 6 characters")
+          message = "{username.cannot.be.less.than.six.characters}")
     private String username;
     @Pattern(regexp = "((?=.*[A-Z]).{6,10})",
              message = "Password must have one upper case, one lower case and should be more than 6 char")
