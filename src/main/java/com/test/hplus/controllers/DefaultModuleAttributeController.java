@@ -21,6 +21,7 @@ public class DefaultModuleAttributeController {
         return Arrays.asList(new String[] { "Male", "Female", "Other" });
     }
 
+    //this object will store session attributes, or in other case should be initialised
     @ModelAttribute("login")
     public Login getDefaultLogin() {
         return new Login();
